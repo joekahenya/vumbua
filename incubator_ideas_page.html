@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Incubator</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- js for search bar and category dropdown -->
+  <!-- <script type="text/javascript">
+      $(document).ready(function() {
+    $('.mdb-select').materialSelect();
+    });
+  </script> -->
+  <!-- end of dropdown js -->
+
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <!-- Main navigation -->
+  <header style="height: 15%;">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <strong><span>VUMBUA</span></strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+          aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="industry_index.html">Home</a>
+                <span class="sr-only">(current)</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ideas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main content section -->
+  <section class="container my-5" style="padding-top:5px;">
+
+    <div class="search-bar">
+    <form class="form-inline active-cyan-4">
+      <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+      <i class="fas fa-search" aria-hidden="true"></i>
+    </form>
+  </div>
+
+    <!-- categories and search bar code -->
+    <!-- <select class="mdb-select md-form" searchable="Search here..">
+      <option value="" disabled selected>Choose your country</option>
+      <option value="1">USA</option>
+      <option value="2">Germany</option>
+      <option value="3">France</option>
+      <option value="3">Poland</option>
+      <option value="3">Japan</option>
+    </select>
+    <label class="mdb-main-label">Label example</label> -->
+    <!-- end of categories and search bar code -->
+
+    <h2 class="h1-responsive text-center my-5"><strong>Incubator</strong></h2>
+    
+
+    <!-- description -->
+<!--     <p class="text-center dark-grey-text w-responsive mx-auto mb-5">The following ideas are ready for incubation. Feel free to have a look at them:</p>
+ -->    <!-- end of description -->
+
+    <!-- cards section -->
+    <div class="row">
+      <div class="col-md-10">
+        <div class="row" id="allCards">
+          
+          <!-- js for handling the cards -->
+          <script type="text/javascript">
+            $(document).ready(function() {
+              var divs = $('card');
+              for (var i = 0; i < divs.length; i+=4) {
+                  divs.slice(i, i + $).wrapAll('<div class="row"></div>')
+                }  
+            });
+          </script>
+          <!-- end of cards js -->
+
+          <!-- cards code -->
+          <div class="row">
+            <!-- Card -->
+      <div class="col-md-4">
+        <div class="card">
+
+          <!-- Card image -->
+          <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+
+          <!-- Card content -->
+          <div class="card-body">
+
+            <!-- Title -->
+            <h4 class="card-title"><a>Card title</a></h4>
+            <!-- Text -->
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!-- Button -->
+            <a href="#" class="btn btn-primary">Read More</a>
+
+          </div>
+
+           <!-- Card footer -->
+          <div class="rounded-bottom mdb-color lighten-3 text-center pt-3">
+            <ul class="list-unstyled list-inline font-small">
+              <li class="list-inline-item pr-2 white-text"><i class="far fa-user pr-1"></i>John Doe</li>
+              <li class="list-inline-item pr-2 white-text"><i class="far fa-thumbs-up pr-1"></i>12</a></li>
+              <li class="list-inline-item pr-2 white-text"><i class="far fa-eye pr-1"></i>20</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <!-- End of Card -->
+          </div>
+          <!-- end of cards code -->
+
+        </div>
+      </div>
+    </div>
+    <!-- end of cards section -->
+  </section>
+  <!-- end of main section -->
+
+  <!-- Footer -->
+  <footer class="page-footer font-small unique-color-dark pt-4" style="margin-top:50px">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Vumbua</h6>
+          <p>Vumbua offers a number of incubation programmes in the Bioeconomy (agro processing and pharmaceutical), Smart Industries (ICT and advanced manufacturing) and Green Economy (Water purification, waste management and renewable energy)</p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
+            <p>
+              <a href="#!">Incubation</a>
+            </p>
+            <p>
+              <a href="#!">Idea Development</a>
+            </p>
+            <p>
+              <a href="#!">Mentorship</a>
+            </p>
+        </div>
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
+          <p>
+            <a href="#!">Home</a>
+          </p>
+          <p>
+            <a href="#!">About Us</a>
+          </p>
+          <p>
+            <a href="#!">Contact Us</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+        </div>
+
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <i class="fas fa-home mr-3"></i>Ole Sangale Road, Madaraka, Nairobi</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@vumbua.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Footer links -->
+
+      <hr>
+
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8">
+
+          <!--Copyright-->
+          <p class="text-center text-md-left">© 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/">
+              <strong> www.SADAC.com</strong>
+            </a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+  </footer>
+  <!-- End of footer section -->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- js for changing the color of the nav bar when scrolled -->
+  <!-- end -->
+  <!-- js for changing the color of the links when page is scrolled -->
+
+
+
+</body>
+
+</html>

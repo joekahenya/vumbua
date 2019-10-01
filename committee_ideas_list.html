@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Idea Bank</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <!-- Main navigation -->
+  <header style="height: 15%;">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <strong><span>VUMBUA</span></strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+          aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="industry_index.html">Home
+                </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Ideas</a>
+                <span class="sr-only">(current)</span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="industry_new_idea.html">Create Idea</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Logout</a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Search form -->
+
+
+  <div class="container">
+    <div class="row">
+  <!-- search bar -->
+  <!-- <div class="search-bar">
+    <form class="form-inline active-cyan-4">
+      <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
+      <i class="fas fa-search" aria-hidden="true"></i>
+    </form>
+  </div> -->
+</div>
+  <!-- end of search bar -->
+
+    <!-- table section -->
+    
+    
+        <div class="container-fluid" style="padding-top: 10%;">
+          <div class="row justify-content-around">
+            <!-- Table with panel -->
+            <div class="card card-cascade narrower">
+
+              <!--Card image-->
+              <div class="view view-cascade gradient-card-header blue-gradient narrower py-2  mb-3 d-flex justify-content-between align-items-center">
+
+                <h4 class="white-text mx-3" style="padding-left: 37.5%;">Ideas List</h4>
+
+              </div>
+              <!--/Card image-->
+
+              <div class="px-4">
+
+                <div class="table-wrapper">
+                  <!--Table-->
+                  <table class="table table-hover mb-0">
+
+                    <!--Table head-->
+                    <thead>
+                      <tr>
+                        <th class="th-lg">
+                          Idea
+                        </th>
+                        <th class="th-lg">
+                          Creator
+                        </th>
+                        <th class="th-lg">
+                          Submission Date
+                        </th>
+                        <th class="th-lg">
+                          Current Status
+                        </th>
+                      </tr>
+                    </thead>
+                    <!--Table head-->
+
+                    <!--Table body-->
+                    <div class="table-body">
+                      <tbody>
+                      <tr>
+                        <td><a href="">Mark</a></td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td><span class="badge badge-primary">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Jacob</a></td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td><span class="badge badge-success">Approved</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Jane</a></td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td><span class="badge badge-danger">Denied</span></td>
+                      </tr>
+                      <tr>
+                        <td><a href="">Cindy</a></td>
+                        <td>Topolski</td>
+                        <td>@P_Topolski</td>
+                        <td><span class="badge badge-danger">Denied</span></td>
+                       </tr>
+                    </tbody>
+                    </div>
+                    <!--Table body-->
+                  </table>
+
+                  <!-- table pagination -->
+                  <nav aria-label="Page navigation" class="d-flex justify-content-center wow fadeIn" style="padding-top: 5%; padding-bottom: 2.5%">
+                    <ul class="pagination pagination-circle pg-blue">
+                      <li class="page-item disabled"><a class="page-link">First</a></li>
+                      <li class="page-item disabled">
+                        <a class="page-link" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link">1</a></li>
+                      <li class="page-item"><a class="page-link">2</a></li>
+                      <li class="page-item"><a class="page-link">3</a></li>
+                      <li class="page-item"><a class="page-link">4</a></li>
+                      <li class="page-item"><a class="page-link">5</a></li>
+                      <li class="page-item">
+                        <a class="page-link" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link">Last</a></li>
+                    </ul>
+                  </nav>
+                  <!-- end of table pagination -->
+
+                  <!--Table-->
+                </div>
+
+              </div>
+
+            </div>
+            <!-- Table with panel -->
+          </div>
+        </div>
+    <!-- end if table section -->
+  </div>
+
+
+
+  <footer class="page-footer font-small unique-color-dark pt-4" style="margin-top:50px">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Vumbua</h6>
+          <p>Vumbua offers a number of incubation programmes in the Bioeconomy (agro processing and pharmaceutical), Smart Industries (ICT and advanced manufacturing) and Green Economy (Water purification, waste management and renewable energy)</p>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
+            <p>
+              <a href="#!">Incubation</a>
+            </p>
+            <p>
+              <a href="#!">Idea Development</a>
+            </p>
+            <p>
+              <a href="#!">Mentorship</a>
+            </p>
+        </div>
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
+          <p>
+            <a href="#!">Home</a>
+          </p>
+          <p>
+            <a href="#!">About Us</a>
+          </p>
+          <p>
+            <a href="#!">Contact Us</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+        </div>
+
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p>
+            <i class="fas fa-home mr-3"></i>Ole Sangale Road, Madaraka, Nairobi</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@vumbua.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Footer links -->
+
+      <hr>
+
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8">
+
+          <!--Copyright-->
+          <p class="text-center text-md-left">© 2019 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/">
+              <strong> www.SADAC.com</strong>
+            </a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+  </footer>
+  <!-- End of footer section -->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- js for changing the color of the nav bar when scrolled -->
+  <!-- end -->
+  <!-- js for changing the color of the links when page is scrolled -->
+</body>
+
+</html>

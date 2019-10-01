@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Vumbua</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- this has been moved from styles.css because it only affects this page other pages should have height:auto not limited to 100% -->
+  <!-- <style type="text/css">
+    html,
+    body,
+    header,
+    .jarallax {
+      height: 100%;
+    }
+  </style> -->
+</head>
+
+<body>
+
+  <!-- Start your project here-->
+  <!-- Main navigation -->
+<header>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <strong><span>VUMBUA</span></strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+        aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="industry_ideas_list.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="industry_new_idea.html">Contact Us</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+  <!-- Full Page Intro -->
+  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(img/bg_4.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- Mask & flexbox options-->
+    <div class="d-flex justify-content-center align-items-center">
+      <!-- Content -->
+      <div class="container-fluid">
+        <!--Grid row-->
+        <div class="row justify-content-around">
+          <!--Grid column-->
+          <!-- sign up form -->
+          <div class="col-md-8 mt-5" style="padding-top: 5%; padding-bottom: 5%;">
+            <!-- Material form register -->
+            <div class="card">
+
+                <h5 class="card-header info-color white-text text-center py-4">Sign up</h5>
+
+                <!--Card content-->
+                <div class="card-body px-lg-5 pt-0" style="height:100%">
+
+                    <!-- Form -->
+                    <form class="text-center" style="color: #757575;" action="#!">
+
+                        <div class="form-row">
+                            <div class="col">
+                                <!-- Username -->
+                                <div class="md-form">
+                                    <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                                    <label for="materialRegisterFormFirstName">Username</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- Email -->
+                                <div class="md-form">
+                                    <input type="email" id="materialRegisterFormEmail" class="form-control">
+                                    <label for="materialRegisterFormEmail">E-mail</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Gender radio button -->
+                        <!-- <div class="form-row">
+                          <div class="col">
+                            <div class="md-form">
+                              <div class="form-check">
+                                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                                <label class="form-check-label" for="materialUnchecked">Male</label>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="md-form">
+                              <div class="form-check">
+                                <input type="radio" class="form-check-input" id="materialUnchecked" name="materialExampleRadios">
+                                <label class="form-check-label" for="materialUnchecked">Female</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div> -->
+
+                        <!-- Gender and category row -->
+                        <div class="form-row">
+                          <div class="col">
+                            <!-- <label for="genderDropDown">Gender</label> -->
+                            <div class="md-form">
+                              <select class="mdb-select dropdown-item md-form">
+                                <option value="" disabled selected>Your Gender:</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                              </select>
+                              <script type="text/javascript">
+                                // Material Select Initialization
+                                $(document).ready(function() {
+                                $('.mdb-select').materialSelect();
+                                });
+                              </script>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="md-form">
+                              <select class="mdb-select dropdown-item md-form">
+                                <option value="" disabled selected>Pick a Category:</option>
+                                <option value="1">Information Technology</option>
+                                <option value="2">Human Resource</option>
+                                <option value="2">Finance</option>
+                                <option value="2">Business</option>
+                                <option value="2">Agriculture</option>
+                                <option value="2">Entertainment</option>
+                              </select>
+                              <script type="text/javascript">
+                                // Material Select Initialization
+                                $(document).ready(function() {
+                                $('.mdb-select').materialSelect();
+                                });
+                              </script>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <!-- Phone number -->
+                        <div class="md-form">
+                          <input type="text" id="materialRegisterFormPhone" class="form-control" aria-describedby="materialRegisterFormPhone">
+                          <label for="materialRegisterFormPhone">Phone number</label>
+                          <small id="materialRegisterFormPhone" class="form-text text-muted mb-4">
+                          </small>
+                        </div>
+
+                        
+
+                        <div class="form-row">
+                          <div class="col">
+                            <!-- Password -->
+                            <div class="md-form">
+                              <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormPassword">
+                              <label for="materialRegisterFormPassword">Password</label>
+                              <small id="materialRegisterFormPassword" class="form-text text-muted mb-4">
+                                  Must contain at least 8 alphanumeric digits...</small>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="md-form">
+                              <input type="password" id="materialRegisterFormPassword" class="form-control" aria-describedby="materialRegisterFormConfirmPassword">
+                              <label for="materialRegisterFormConfirmPassword">Confirm Password</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Sign up button -->
+                        <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+
+                        <!-- Social register -->
+                        <!-- <p>or sign up with:</p>
+
+                        <a type="button" class="btn-floating btn-fb btn-sm">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a type="button" class="btn-floating btn-tw btn-sm">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a type="button" class="btn-floating btn-li btn-sm">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a type="button" class="btn-floating btn-git btn-sm">
+                            <i class="fab fa-github"></i>
+                        </a> -->
+
+                        <hr>
+
+                        <!-- Terms of service -->
+                        <p>By clicking
+                            <em>Sign up</em> you agree to our
+                            <a href="" target="_blank">terms of service</a>
+
+                    </form>
+                    <!-- Form -->
+
+                </div>
+
+            </div>
+            <!-- Material form register -->
+          </div>
+          <!-- end of sign up form -->
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
+  </div>
+  <!-- Full Page Intro -->
+</header>
+
+<!-- body section -->
+
+<!-- end of main section -->
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Footer links -->
+    <div class="row text-center text-md-left mt-3 pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Vumbua</h6>
+        <p>Vumbua offers a number of incubation programmes in the Bioeconomy (agro processing and pharmaceutical), Smart Industries (ICT and advanced manufacturing) and Green Economy (Water purification, waste management and renewable energy)</p>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="w-100 clearfix d-md-none">
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Services</h6>
+          <p>
+            <a href="#!">Incubation</a>
+          </p>
+          <p>
+            <a href="#!">Idea Development</a>
+          </p>
+          <p>
+            <a href="#!">Mentorship</a>
+          </p>
+      </div>
+
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
+        <p>
+          <a href="#!">Home</a>
+        </p>
+        <p>
+          <a href="#!">About Us</a>
+        </p>
+        <p>
+          <a href="#!">Contact Us</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+      </div>
+
+      <!-- Grid column -->
+      <hr class="w-100 clearfix d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+        <p>
+          <i class="fas fa-home mr-3"></i>Ole Sangale Road, Madaraka, Nairobi</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@vumbua.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Footer links -->
+
+    <hr>
+
+    <!-- Grid row -->
+    <div class="row d-flex align-items-center">
+
+      <!-- Grid column -->
+      <div class="col-md-7 col-lg-8">
+
+        <!--Copyright-->
+        <p class="text-center text-md-left">© 2019 Copyright:
+          <a href="https://mdbootstrap.com/education/bootstrap/">
+            <strong> www.SADAC.com</strong>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-5 col-lg-4 ml-lg-0">
+
+        <!-- Social buttons -->
+        <div class="text-center text-md-right">
+          <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+</footer>
+<!-- Footer -->
+
+<!-- Main navigation -->
+
+  <!-- <div style="height: 100vh">
+    <div class="flex-center flex-column">
+
+      <h1 class="text-hide animated fadeIn mb-4"
+        style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">
+        MDBootstrap</h1>
+      <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+
+      <p class="animated fadeIn text-muted">MDB Team</p>
+    </div>
+  </div> -->
+  <!-- Start your project here-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- js for changing the color of the nav bar when scrolled -->
+  <!-- end -->
+  <!-- js for changing the color of the links when page is scrolled -->
+</body>
+
+</html>
